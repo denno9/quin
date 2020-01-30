@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+     background-image:url("/static/images/mzani.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-origin: content-box;
+    background-size: cover;
+    
+}
+html{
+  background-image:url("/static/images/mzani.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+  background-origin: content-box;
+  background-size: cover;
+      position: relative;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    margin-bottom: 0px !important;
+    padding: 0 40px 0px 90px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    background-color:#9e1e46;
+    opacity: 0.5;
+    width: 100%;
+    height: 100px;
+    line-height:50px ;
+    z-index: 5000000;
+    
+    
+  }
+  
+  ul li {
+    float: right;
+    margin-top: 20px;
+
+    /* margin-bottom: auto; */
+  }
+  
+   li a {
+    display: block;
+    color:#e1bc60;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  li a:hover {
+    display: block;
+    color: white;
+    text-align: center;
+    /* padding-top: 14px; */
+    padding-bottom: 0px;
+    text-decoration: none;
+    /* background-color: rebeccapurple; */
+  }
+
+  .rightcolumn{
+      width:25%;
+      float: left;
+      height: 100%;
+  }
+.rightcolumn ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* width: px; */
+}
+.rightcolumn li{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.headerCover{
+    background-image:url("/static/images/law.jpg") ;
+    /* background-attachment: */
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-origin: content-box;
+    background-size: cover;
+}
+  .maincontent{
+      width: 80%;
+      height: 100%;
+      float:center;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20px;
+      font-size: 16px !important ;
+     
+  }
+
+  .mainOverlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: auto;
+  }
+  .hide{
+    display: none;
+  }
+  .maincontent1{
+    width: 90%;
+    height: 100%;
+    float:center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px !important ;
+   
+}
+  .overlay{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+  }
+  .accordion{
+    background-image: url("/static/images/law.jpg");
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-origin: content-box;
+    background-size: cover;
+    /* background-color: #e1bc60 !important; */
+    
+  }
+  .card{
+    opacity: 1;
+    border: 0 !important;
+    box-shadow: 0 !important;
+    
+  }
+  .modal{
+    z-index: 5000000 !important;
+  }
+  .card-header{
+    border: 0 !important;
+    box-shadow: 0 !important;
+    background-color: #214869 !important;
+
+    color: white !important;
+    border-bottom-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+  }
+  .btn, .btn-link{
+    border: 0 !important;
+    box-shadow: 0 !important;
+    color: white !important;
+  }
+  .maincontent h1{
+      text-align: center;
+      
+      width: 100%;
+      box-shadow: 2px 0 2px blue;
+      font-size: 30px !important ;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      /* line-height: 50px; */
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .maincontent p{
+    text-align: start;
+    /* box-shadow: 2px 2px red; */
+    font-size: 16px !important ;
+    
+}
+.maincontent p img{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    float: left;
+}
+.footer{
+    background-color:#9e1e46;
+    color: #e1bc60;
+    position: relative;
+    /* font-family: Roboto; */
+    height: 100px;
+    font-size: 16px;
+    line-height: 30px;
+    bottom: 0;
+    
+}
+
+
+.home{
+    width: 100%;
+    background-color:black;
+    display: block;
+    background-image:url("/static/images/home.jpg") ;
+    background-position:fixed;
+    background-repeat: no-repeat, repeat;
+    background-origin: content-box;
+    background-size: contain;
+}
+
+  .rowone{
+      width: 100%;
+      /* overflow-y: scroll; */
+      background-color:white;
+      opacity: 0.9;
+      height: 100%;
+      box-shadow: 5px 10px 18px #888888;
+      position: relative;
+      /* left:15%; */
+      top: -0%;
+      /* right: 50%; */
+      float:center;
+  }
+  /* .rowone:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px){
+    .maincontent{
+        margin-left: 0;
+        margin-right: 0;
+        float:center;
+        justify-content: center;
+        width: 100%;
+    }
+    .maincontent h2{
+        text-align: justify;
+        box-shadow: 2px 0 2px blue;
+        margin-bottom: 4px;
+        font-size: 20px !important ;
+  }
+  .rowone{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+margin: 0;
+    height: 100%;
+   justify-content: center;
+    position: fixed;
+    left:0;
+    right: 50%;
+    /* float:center; */
+}
+}
+  
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .maincontent{
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+    }
+    .maincontent h2{
+        text-align: start;
+        width: 100%;
+        box-shadow: 2px 0 2px blue;
+        line-height: 30px;
+        font-size: 20px !important ;
+  }
+  .maincontent p{
+    text-align: start;
+    /* box-shadow: 2px 0 2px red; */
+    font-size: 20px !important ;
+    margin: 0px 10px 0px 10px;
+}
+.rowone{
+    width: 100%;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding:0;
+    /* margin: 10 auto; */
+    height: 100%;
+    /* box-shadow: 5px 10px 18px #888888;
+    position: fixed;
+    left:15%; */
+    /* right: 50%; */
+    float:center;
+}
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  height: 100%;
+}
+.responsive1 {
+  padding: 0 6px;
+  /* float: left; */
+  width: 50%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

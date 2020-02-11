@@ -1,348 +1,306 @@
+{% extends "base.html"%}
 {% load static  %}
-<!DOCTYPE html>
-<html lang="en">
+{%block content%}
+<!-- <div style="position:absolute; height: 35%; width: 100%;  margin:0 auto ;background-color:red; z-index: 50000000;">
+ <h2> Welcome to quins cooperate Chambers</h2>
+ <div style="width: 1px; height: 50%; background-color: black;"></div>
+ <h4></h4>
+ <p>is a newly established corporate firm in Dar Es Salaam, Tanzania. Since its establishment, the firm
+    has evolved from a general practice law firm to a specialized law firm with a wide range of
+    interdisciplinary expertise,
+    which gives it superiority in resolving clients’ problems in a timely and efficient manner....</p>
+</div> -->
+<div class="maincontent1  " id="team">
+    <div style="margin-left: 200px;">
+        <div class="responsive">
+            <div class="gallery">
 
-<head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href='{% static "css/style.css"%}'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <title>Quinn Corporate Chambers</title>
-</head>
+                <img src="/static/images/anna.jpg" alt="Cinque Terre" width="600" height="400">
 
-<body>
-    <div class="home">
-        <div class="headerCover">
-            <ul>
-                <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
-                        Contact
-                    </button></li>
-                <li style="float: left !important;"><a href="{%url 'home'%}">Home</a></li>
-                <li><a href="{%url 'team'%}">The Team</a></li>
-                <li><a href="#xpertise">Field Of expertise</a></li>
-                <li><a href="about.asp">About</a></li>
-            </ul>
+                <div class="desc">
+                    <div class="d-flex flex-column bd-highlight justify-content-start ">
+                        <div class="bd-highlight">Annamary Ishengoma Bilikwija</div>
+                        <div class=" bd-highlight">Partiner</div>
+                        <!-- <div class=" bd-highlight">Flex item 3</div> -->
+                    </div>
+                </div>
+            </div>
         </div>
 
 
-        <div class="rowone">
-            <div class="maincontent1 " id="team">
-                <div class="responsive">
-                    <div class="gallery">
+        <div class="responsive">
+            <div class="gallery">
 
-                        <img src="/static/images/anna.jpg" alt="Cinque Terre" width="600" height="400">
+                <img src="/static/images/vyone.JPG" alt="Forest" width="600" height="400">
 
-                        <div class="desc"> </div>
-                    </div>
-                </div>
-
-
-                <div class="responsive">
-                    <div class="gallery">
-
-                        <img src="/static/images/vyone.JPG" alt="Forest" width="600" height="400">
-
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-
-                        <img src="/static/images/anna.jpg" alt="Herman petero" width="600" height="400">
-
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-
-                        <img src="/static/images/vyone.JPG"  alt="legal officer" width="600" height="400">
-
-                        <div class="desc">Add a description of the image here</div>
+                <div class="desc">
+                    <div class="d-flex flex-column bd-highlight justify-content-start ">
+                        <div class="bd-highlight">Herman Peter Gervas</div>
+                        <div class=" bd-highlight"> Managing Partiner</div>
+                        <!-- <div class=" bd-highlight">Flex item 3</div> -->
                     </div>
                 </div>
             </div>
-
-            <div class="clearfix"></div>
-
-            <div class="maincontent shadow-lg px-sm-0 px-md-3">
-                <h1>Quinn Corporate Chambers</h1>
-                <p>
-                    <img src="/static/images/law.jpg" alt=""> <span>Quinn Corporate Chambers</span>
-                    is a newly established corporate firm in Dar Es Salaam, Tanzania. Since its establishment, the firm
-                    has evolved from a general practice law firm to a specialized law firm with a wide range of
-                    interdisciplinary expertise,
-                    which gives it superiority in resolving clients’ problems in a timely and efficient manner. However
-                    the firm is also offering Advocacy services as well as representation in all matters involving the
-                    law, taxation, international trade, investments and related fields, banking, insurance, corporate
-                    and all other related legal matters.
-
-
-                </p>
-                <p> We have represented and still represent a spectrum of clientele that includes businesses, small and
-                    medium sized companies, financial firms, investors and high net worth private clients. We have
-                    engaged in a broad-based business transactional planning and structuring practice. Our team combines
-                    sophisticated planning concepts with practical approaches to achieve our clients’ goals. We advise
-                    businesses at all stages of their development, from the initial choice of entity structure and
-                    issues with daily operations, through acquisitive and growth transactions, to dispositions and
-                    succession planning.
-                    We offer tax advice on all types of business transactional issues, including the choice of entity
-                    structure, restructuring and terminations. </p>
-                <p>The Firm has been committed to the complementary goals of being both aggressive and cost-effective in
-                    pursuit of our clients’ interests. Because every client has individualized goals and resources, we
-                    devise and execute individualized strategies to protect the client’s rights and promote the client’s
-                    objectives.
-                </p>
-                <hr>
-                <h3>Legal Status</h3>
-                <p>This is one of the fast-growing corporate firms in the Dar Es Salaam. It has its offices on Plot
-                    Number 43, Cameroon Street, within Dar Es Salaam City. The firm was initially registered with the
-                    Registrar of Companies on 2nd day of January, 2020 vide Certificate of Registration No 465085.
-
-                </p>
-                <hr>
-                <h3>Personnel and Equipments</h3>
-                <p>
-                    Apart from the partners, the firm has in addition professionals in the fields of law, accounting,
-                    estates and other administrative/technical support cadre. In fit brief experts in other fields are
-                    contracted to attend to the brief at hand and remunerated accordingly.
-                    The chambers are furnished with state of the art computer hardware, appropriate software systems and
-                    modern communication facilities.
-
-                </p>
-                <hr>
-            </div>
-            <div class="maincontent shadow-lg px-sm-0 px-md-3" id="expertise">
-
-                <div class="accordion mb-2 shadow-none border-0" id="accordionExample">
-                    <h2> FIELD OF EXPERTISE:</h2>
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    CORPORATE LAW, COMMERCIAL DRAFTING
-                                </button>
-                            </h2>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                We advise on all matters of Corporate Law in Tanzania. We cater for all legal services
-                                from incorporation of the corporate entity to the dissolution of such entity. We also
-                                provide corporate secretarial services and corporate statutory compliance services, to
-                                ensure that our client do comply with the legal regime and good governance to the
-                                corporate boards. We provide expert legal advice and practical assistance to companies
-                                and their boards of directors on corporate practice and other compliance matters.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    BANKING LAW
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                Our services range from first and second loan facilities; acquisition financings; senior
-                                and subordinated bridge financings; recapitalization financings; asset-backed
-                                financings; mezzanine financings; workouts, restructurings and exit financings; private
-                                placements; and investment grade financings. We also work with lawyers in other
-                                corporate firms to provide unified representation and integrated legal services. We also
-                                deal with recovery of loans, this is backed up with experienced litigation lawyers
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    3 LITIGATION
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                The firm believes in efficiency of the Alternative Dispute Resolution (ADR) system.
-                                Whenever appropriate, the firm employs different forms of ADR to bring about quick
-                                resolution of disputes to the relief of the firm clientele.
-                                Our approach mirrors the firm’s overall philosophy of providing innovative
-                                representation that recognizes business realties and is both economical and responsive
-                                to our clients’ individual needs. The lawyers in our litigation practice have experience
-                                in the successful resolution of a broad range of commercial and regulatory matters,
-                                including criminal, civil, contracts, creditor disputes, employment issues, fraud,
-                                securities and shareholder disputes. Our lawyers understand that litigation can be
-                                time-consuming, emotionally stressful and expensive. Accordingly, we can often prevent a
-                                lawsuit through judicious negotiation and advice. Our approach emphasizes practical
-                                understanding of our clients' problems and we have experience across every segment of
-                                the corporate and financial world. We specialize in managing complex cases involving
-                                multiple claims and parties in courts of law, tribunals or through arbitration.
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card ">
-                        <div class="card-header" id="headingFive">
-                            <h2 class="mb-0 text-start">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    INVESTMENTS
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                The Firm has a clear understanding of the investment climate in Tanzania as well as an
-                                extensive commercial law practice related to local and international business
-                                transactions. We also cover all aspects of investment in the country ranging from
-                                drafting contracts and agreements to infrastructure, taxation, and stock exchange. We
-                                offer all services including Share/Stock purchase agreements and shareholders
-                                agreements;
-                                Indemnity and a variety of investment agreements; and Applications for investment
-                                incentives.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card ">
-                        <div class="card-header" id="headingSix">
-                            <h2 class="mb-0 text-start">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    FINANCE LAW
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                We provide our clients with well-informed legal advice on matters of finance ranging
-                                from banking matters,
-                                insurance and capital markets. We advise clients on legal matters relating to their
-                                dealings with banking and financial institutions,
-                                insurance companies and representations in the Dar es Salaam Stock of Exchange.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card ">
-                        <div class="card-header" id="headingSeven">
-                            <h2 class="mb-0 text-start">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    LABOUR AND EMPLOYMENT
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                Our services range from first and second loan facilities; acquisition financings; senior
-                                and subordinated bridge financings; recapitalization financings; asset-backed
-                                financings; mezzanine financings; workouts, restructurings and exit financings; private
-                                placements; and investment grade financings. We also work with lawyers in other
-                                corporate firms to provide unified representation and integrated legal services. We also
-                                deal with recovery of loans, this is backed up with experienced litigation lawyers
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card ">
-                        <div class="card-header" id="headingEight">
-                            <h2 class="mb-0 text-start">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    EMPLOYMENT AND IMMIGRATION LAW
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                We fulfill the need of our Clients regarding engagement of expatriates in their
-                                enterprises.
-                                Our employment and immigration department advises clients on the general employment
-                                matters that needs legal compliance such as payment of employment taxes and
-                                contributions to social security funds. It also advises clients on immigration law,
-                                including procurement of work and residence permits,
-                                visas and other passes to ensure that the company complies with immigration
-                                requirements.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer" style=" text-align: center; width: 100;">
-                <h4>
-                    Plot No.43 Cameroon Road, Makumbusho
-                </h4>
-                <h3>
-                    P.O.Box 1892, Dar es Salaam, Tanzania
-                </h3>
-            </div>
-
         </div>
 
-        <div>
+        <div class="responsive">
+            <div class="gallery">
 
+                <img src="/static/images/anna.jpg" alt="Herman petero" width="600" height="400">
+
+                <div class="desc">
+                    <div class="bd-highlight">Herman Peter Gervas</div>
+                    <div class=" bd-highlight"> Managing Partiner</div>
+
+                </div>
+            </div>
         </div>
     </div>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel">Contact Us</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="maincontent shadow-lg px-sm-0 px-md-3">
+    <h1>Quinn Corporate Chambers</h1>
+    <p>
+        <img src="/static/images/icongold.png" alt="quins logo" style="height: 250px; width: auto;"> <span
+            style="color:#BA9537;">uinn Corporate Chambers</span>
+        is a newly established corporate firm in Dar Es Salaam, Tanzania. Since its establishment, the firm
+        has evolved from a general practice law firm to a specialized law firm with a wide range of
+        interdisciplinary expertise,
+        which gives it superiority in resolving clients’ problems in a timely and efficient manner. However
+        the firm is also offering Advocacy services as well as representation in all matters involving the
+        law, taxation, international trade, investments and related fields, banking, insurance, corporate
+        and all other related legal matters.
+
+
+    </p>
+    <p> We have represented and still represent a spectrum of clientele that includes businesses, small and
+        medium sized companies, financial firms, investors and high net worth private clients. We have
+        engaged in a broad-based business transactional planning and structuring practice. Our team combines
+        sophisticated planning concepts with practical approaches to achieve our clients’ goals. We advise
+        businesses at all stages of their development, from the initial choice of entity structure and
+        issues with daily operations, through acquisitive and growth transactions, to dispositions and
+        succession planning.
+        We offer tax advice on all types of business transactional issues, including the choice of entity
+        structure, restructuring and terminations. </p>
+    <p>The Firm has been committed to the complementary goals of being both aggressive and cost-effective in
+        pursuit of our clients’ interests. Because every client has individualized goals and resources, we
+        devise and execute individualized strategies to protect the client’s rights and promote the client’s
+        objectives.
+    </p>
+    <hr>
+    <h5>FOCUS AND APPROACH</h5>
+    <p>As a corporate and commercial law firm, we focus strongly on the needs of our clients and their respective
+        businesses.
+        Our client base requires a rapid response, appropriate advice and innovative legal solutions based on a full
+        understanding of their individual business needs.
+        The practice is built on its reputation of exceptional service delivery coupled with appropriate and outstanding
+        skills and expertise.
+        We believe in following a holistic approach to ensure that our clients receive best advice at all times. We have
+        a keen understanding of
+        global economic and market trends and combined with our commitment to excellence, we have the ability to cut
+        straight to the chase in any matter effective,
+        efficient an expeditious.
+
+    </p>
+    <hr>
+    <h5>PERSONNEL AND EQUIPMENT</h5>
+    <p>
+        Apart from the partners, the firm has in addition professionals in the fields of law, accounting,
+        estates and other administrative/technical support cadre. In fit brief experts in other fields are
+        contracted to attend to the brief at hand and remunerated accordingly.
+        The chambers are furnished with state of the art computer hardware, appropriate software systems and
+        modern communication facilities.
+
+    </p>
+    <hr>
+</div>
+<div class="maincontent shadow-lg px-sm-0 px-md-3" id="expertise">
+
+    <div class="accordion mb-2 shadow-none border-0" id="accordionExample">
+        <h2> FIELD OF EXPERTISE:</h2>
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        CORPORATE LAW AND COMMERCIAL LAW
                     </button>
-                </div>
-                <div class="modal-body">
-                    <p>Quinn Corporate Chambers,</p>
-                    <p>P.O. Box 1897,</p>
-                    <p>Plot No 43, Cameroon Road,</p>
-                    <p> Makumbusho, Dar es Salaam</p>
-                    <p>Email: quinncorporatechambers@gmail.com</p>
+                </h2>
+            </div>
 
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Corporate and Commercial Law are at the heart of the firm. We advise on all matters of Corporate Law
+                    in Tanzania. We cater for all legal services from incorporation of the corporate entity to the
+                    dissolution of such entity. We also provide corporate secretarial services and corporate statutory
+                    compliance services, to ensure that our client do comply with the legal regime and good governance
+                    to the corporate boards. We provide expert legal advice and practical assistance to companies and
+                    their boards of directors on corporate practice and other compliance matters.
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        BANKING & FINANCE LAW
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    We provide our clients with well-informed legal advice on matters of finance ranging from banking
+                    matters, insurance and capital markets. We advise clients on legal matters relating to their
+                    dealings with banking and financial institutions, insurance companies and representations in the Dar
+                    es Salaam Stock of Exchange. Our services range from first and second loan facilities; acquisition
+                    financings; senior and subordinated bridge financings; recapitalization financings; asset-backed
+                    financings; mezzanine financings; workouts, restructurings and exit financings; private placements;
+                    and investment grade financings.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        CONVEYANCING AND REAL ESTATE
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    The firm advises clients when buying and selling commercial, industrial or residential property or
+                    in matters involving owners’ corporations. We are also experienced in matters involving retail or
+                    commercial leasing. When dealing with property matters, our expertise in conveyancing, finance and
+                    refinancing, subdivisions, leasing and planning laws will serve to protect all client’s interests.
+                    You can also be assured that when property is affected by family or estate disputes, we have the
+                    relevant skills and expertise in resolving such matters. Our key areas of expertise and experience
+                    includes Residential Conveyancing, Commercial and industrial Conveyancing, Building contracts,
+                    Creation and removal of caveats, Creation and removal of covenants, Creation and removal of
+                    easements, Financing and refinancing, Retail and commercial leasing, Planning applications and
+                    disputes, Subdivisions and developments.
 
                 </div>
             </div>
         </div>
+        <div class="card ">
+            <div class="card-header" id="headingFive">
+                <h2 class="mb-0 text-start">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        LABOUR AND EMPLOYMENT
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    Our firm regularly advise business enterprises, boards and company management teams on employment
+                    contracts and staff policy handbooks, labour relations and trade unions, employee transfer, and
+                    issues of recruitment, retention and termination. Our lawyers also have extensive experience in
+                    providing commercially focused advice on employment incentives. We have assisted local and
+                    international clients with implementation and structuring of pension schemes, share plans, and
+                    compensation claims and benefits. Our advisory services cover all aspects of Employment contracts,
+                    Recruitment and retention, Employee transfers, Retrenchment, dismissal and redundancy, Employment
+                    litigation and alternative dispute resolution, Health and safety, Immigration and work permits,
+                    Non-compete provision agreements, Employee incentive and share ownership plans.
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header" id="headingSix">
+                <h2 class="mb-0 text-start">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        TAX LAW
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                    We provide businesses and individuals with sophisticated and comprehensive tax advice in the areas
+                    of corporate tax, individual tax, withholding tax, VAT, and all other indirect taxes. We advise
+                    clients on a wide range of tax issues including business transactional planning and structuring,
+                    real estate, finance, compensation planning, mergers, acquisitions, divestitures and restructurings,
+                    tax controversy, and international taxation.
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header" id="headingSeven">
+                <h2 class="mb-0 text-start">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        INVESTMENTS
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                <div class="card-body">
+                    The Firm has a clear understanding of the investment climate in Tanzania as well as an extensive
+                    commercial law practice related to local and international business transactions. We also cover all
+                    aspects of investment in the country ranging from drafting contracts and agreements to
+                    infrastructure, taxation, and stock exchange. We offer all services including Share/Stock purchase
+                    agreements and shareholders agreements; Indemnity and a variety of investment agreements; and
+                    Applications for investment incentives.
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header" id="headingEight">
+                <h2 class="mb-0 text-start">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        ENTERTAINMENT LAW
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                <div class="card-body">
+                    Entertainment law is the sum total of several different types of law that are relevant to the
+                    entertainment industry including transactional law and litigation. That is why we make sure that our
+                    clients are well informed of their rights as well as obligations needed to be fulfilled under
+                    entertainment law. In this area we deal with issues like Drafting and negotiating development and
+                    production contracts, such as writer agreements, talent agreements, and recording agreements,
+                    Facilitating and negotiating distribution deals for an entertainment project, Working on financing
+                    agreements for sponsorships, bank loans, co-production investments, grants, and other types of
+                    investments, Preparing form agreements for clients, such as appearance releases, location releases,
+                    and license agreements and Reviewing contracts and other legal documents to analyze rights issues or
+                    other business or legal questions.
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header" id="headingnine">
+                <h2 class="mb-0 text-start">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                        OTHER AREAS OF EXPERTISE
+                    </button>
+                </h2>
+            </div>
+            <div id="collapsenine" class="collapse" aria-labelledby="headingnine" data-parent="#accordionExample">
+                <div class="card-body">
+                    Over and above the above-mentioned areas of expertise the firm also boasts its expertise in the
+                    following streams, Litigation, Competition Law, Consumer Law, Intellectual Property Law, Family Law,
+                    Capital Market Law, Wildlife Law and Human Rights Law.
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-    <script>
-        page = document.getElementsByClassName("contOVeray").addEventListener();
-        setTimeout(function () {
-            document.getElementById("team").classList.remove("hide");
-            //   document.getElementsByClassName('').classList.remove();
-        }, 500)
+<script>
+    page = document.getElementsByClassName("contOVeray").addEventListener();
+    setTimeout(function () {
+        document.getElementById("team").classList.remove("hide");
+        //   document.getElementsByClassName('').classList.remove();
+    }, 500)
 
-    </script>
-</body>
-
-</html>
+</script>
+{%endblock%}

@@ -1,0 +1,1 @@
+web: gunicorn quinn.wsgi --log-file -

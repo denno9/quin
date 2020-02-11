@@ -1,0 +1,92 @@
+{% extends "base.html"%}
+{% load static  %}
+{% block content%}
+<div class="maincontent mt-0 pt-3 ">
+
+    <div class="card ">
+        <div class="card-header">
+            Leave us a message and we will get intouch with you
+        </div>
+        <div class="card-body">
+            <form method="POST"> {% csrf_token %}
+                {{form}}
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+  
+    </div>
+    <div class="card mt-5">
+        <div class="card-header">
+            You can find us at
+        </div>
+        <div class="card-body">
+            <div>
+
+                <p>Quinn Corporate Chambers,</p>
+                <p>P.O. Box 1897,</p>
+                <p>Plot No 43, Cameroon Road,</p>
+                <p> Makumbusho, Dar es Salaam</p>
+                <p>Email: quinncorporatechambers@gmail.com</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="card  ">
+        <div class="card-header">Contact any of our very own Attonneys</div>
+        <div class="card-body">
+            <div class="d-flex flex-column bd-highlight mb-3">
+
+                <div class="card">
+                    <div class="card-header">Herman Peter</div>
+                    <div class="card-body">
+
+                        <p>Quinn Corporate Chambers,</p>
+                        <p>P.O. Box 1897,</p>
+                        <p>Plot No 43, Cameroon Road,</p>
+                        <p> Makumbusho, Dar es Salaam</p>
+                        <p> Email:<a href="mailto:Email: hermany@qcc.co.tz"> herman@qcc.co.tz</a></p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Annamary Ishengoma</div>
+                    <div class="card-body">
+
+                        <p>Quinn Corporate Chambers,</p>
+                        <p>P.O. Box 1897,</p>
+                        <p>Plot No 43, Cameroon Road,</p>
+                        <p> Makumbusho, Dar es Salaam</p>
+                        <p> Email:<a href="mailto:Email: annamary@qcc.co.tz"> annamary@qcc.co.tz</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Vyone</div>
+                    <div class="card-body">
+
+                        <p>Quinn Corporate Chambers,</p>
+                        <p>P.O. Box 1897,</p>
+                        <p>Plot No 43, Cameroon Road,</p>
+                        <p> Makumbusho, Dar es Salaam</p>
+                        <p> Email:<a href="mailto:Email: vyonne@qcc.co.tz"> vyonne@qcc.co.tz</a></p>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="card-header">Herman Peter</div>
+                    <div class="card-body">
+
+                        <p>Quinn Corporate Chambers,</p>
+                        <p>P.O. Box 1897,</p>
+                        <p>Plot No 43, Cameroon Road,</p>
+                        <p> Makumbusho, Dar es Salaam</p>
+                        <p>Email: herman@2cc.co.tz</p>
+                    </div>
+                </div> -->
+               
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{%endblock%}

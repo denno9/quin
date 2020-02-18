@@ -3,6 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
+
+ section{
+   height: 500px;
+   width: 95%;
+  
+   font:13px/1.231 sans-serif;
+   margin-right: auto;
+   margin-left: auto;
+ }
+ section h5{
+  font-size: 13px;
+  color:white;
+ }
+ section h2{
+   color: #464646;
+ }
+ #contact{
+   background-color: #1d1e22;
+   color: #fba631;
+   text-align: center;
+ }
+
+ #forms{
+   background-color: #edecea;
+  
+ }
 body{
     position: relative;
     width: 100%;
@@ -12,6 +42,7 @@ body{
     background-origin: content-box;
     background-size: cover;
     background-color: #1D2C39;
+    overflow-x: hidden;
     
 }
 html{
@@ -24,9 +55,24 @@ html{
   background-color: #1D2C39;
 }
 
+#home .flex-column{
+padding: 10px;
+margin: 5px;
+font-size: 10px;
+}
+#home .flex-column .fa{
+  color:#BA9537;
+  border: 2px 2px #BA9537;
+  border-radius: 2px;
+  margin-bottom: 3px;
+}
+
 /* inpute syele */
 form{
-  width: 30%;
+  width: 40%;
+  height: auto;
+  margin-top: 30px;
+  padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -175,6 +221,62 @@ ul {
     font-size: 16px !important ;
    
 }
+.container1{
+  height: 600px;
+  /* display: none; */
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 150px;
+  background-color:#1E1E1E ;
+  background-image:url("/static/images/mainlogo.png") ;
+  /* background-attachment: */
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+  background-origin: content-box;
+  background-size:contain;
+  /* background-color: red; */
+}
+#container{
+  height: 650px;
+  padding: 40px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#1E1E1E ;
+}
+
+#container img{
+  margin-top: 30px;
+  float: right;
+  margin-left: 100px;
+}
+#container #logo{
+  align-content: center;
+  width: 100%;
+}
+
+#container h1{
+  background-color:#1E1E1E ;
+  font-size: 16px !important ;
+  color: yellowgreen ;
+}
+#container .d-flex{
+  margin: 0 auto;
+}
+.maincontent2{
+  width: 90%;
+  height: 600px;
+  align-items: center;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  background-color:#1E1E1E ;
+  font-size: 16px !important ;
+ 
+}
   .overlay{
     
     opacity: 0.8;
@@ -210,7 +312,7 @@ ul {
     border: 0 !important;
     box-shadow: 0 !important;
     background-color:#2a414f !important;
-    /* background-color: #214869 !important; */
+   
 
     color: white !important;
     border-bottom-right-radius: 5px  #2a414f!important;
@@ -221,7 +323,7 @@ ul {
     box-shadow: 0 !important;
     color: white !important;
   }
-  .maincontent h1{
+  .maincontent h1, .maincontent2 h1{
       text-align: center;
       color:#BA9537;
       width: 100%;
@@ -232,14 +334,7 @@ ul {
       margin-top: 20px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-  /* @keyframes example {
-    from {visibility:visible;}
-    to {visibility: hidden;}
-  } */
-  /* @keyframes example {
-    from {background-color: red;}
-    to {background-color: green;}
-  } */
+  
   @keyframes example {
     from {color:black}
     to {color:#BA9537; }
@@ -267,13 +362,13 @@ ul {
     animation-timing-function: ease-out;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-  .maincontent p{
+  .maincontent p, .maincontent2 p{
     text-align: start;
     font-size: 16px !important ;
-    
+   
     
 }
-.maincontent p img{
+.maincontent p img, .maincontent2 p img{
     width: 300px;
     height: auto;
     margin: 10px;
@@ -367,19 +462,12 @@ margin: 0;
     font-size: 20px !important ;
     margin: 0px 10px 0px 10px;
 }
-.rowone{
+/* .rowone{
     width: 100%;
-    /* padding-left: 10px;
-    padding-right: 10px; */
     padding:0;
-    /* margin: 10 auto; */
     height: 100%;
-    /* box-shadow: 5px 10px 18px #888888;
-    position: fixed;
-    left:15%; */
-    /* right: 50%; */
     float:center;
-}
+} */
 }
 
 div.gallery {
@@ -408,7 +496,7 @@ div.desc {
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 25.99999%;
+  width: 20.99999%;
   height: 100%;
 }
 .responsive1 {

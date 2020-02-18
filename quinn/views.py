@@ -19,6 +19,11 @@ def errorPage(request):
 
 
 
+def aboutPage(request):
+    return render(request,"aboutPage.html", {})
+
+
+
 
 
 

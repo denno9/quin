@@ -23,8 +23,8 @@ from .views import HomePage,expertisePage,aboutPage
 urlpatterns = [
     path('',HomePage, name ='home'),
      path('about/',aboutPage, name ='about'),
-    path('attoneys/',include('theTeam.urls')),
-    path('field_of_expertise/',expertisePage, name ='field_of_expertise'),
+    path('the_team/',include('theTeam.urls')),
+    path('practicearea/',expertisePage, name ='practicearea'),
     path('contact/',include('contact.urls')),    
     path('admin/', admin.site.urls),
 ]

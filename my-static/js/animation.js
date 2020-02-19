@@ -34,6 +34,11 @@ document.addEventListener('DOMContentLoaded',()=>{
         easing:'easeInOutSine'
     })
     .add({
+        targets:'#more',
+        translateY:['-100','0'],
+        opacity:['0','1']
+    })
+    .add({
         targets:'#quin',
         translateY:['-100','0'],
         opacity:['0','1']
@@ -59,14 +64,4 @@ document.addEventListener('DOMContentLoaded',()=>{
         width:['75%','-0px']
     })
 
-let waypoint = new waypoint({
-    element: document.querySelector('#home'),
-    handler: function(){
-        anime.timeline({
-         targets:'#home',
-         translateY:['-100','0'],
-         easing:'easyOutExpo'
-        })
-    },
-    content:document.querySelector('.home'),
-})})
+});

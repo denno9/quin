@@ -33,6 +33,16 @@
    background-color: #edecea;
   
  }
+ .button {
+  background-color:#1f415f;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 body{
     position: relative;
     width: 100%;
@@ -42,6 +52,7 @@ body{
     background-origin: content-box;
     background-size: cover;
     background-color: #1D2C39;
+    overflow-x: hidden;
     
 }
 html{

@@ -10,7 +10,12 @@ import datetime
 
 
 def HomePage(request):
-    return render(request,"homepage.html",{})
+    x = datetime.datetime.now()
+    year = x.strftime("%Y")
+    context= {
+         "year": year
+    }
+    return render(request,"homepage.html",context)
 
 
 
@@ -20,7 +25,12 @@ def errorPage(request):
 
 
 def aboutPage(request):
-    return render(request,"aboutPage.html", {})
+    x = datetime.datetime.now()
+    year = x.strftime("%Y")
+    context= {
+         "year": year
+    }
+    return render(request,"aboutPage.html",context)
 
 
 
@@ -30,4 +40,9 @@ def aboutPage(request):
 
 
 def expertisePage(request):
-    return render(request,"expertisePage.html",{})
+    x = datetime.datetime.now()
+    year = x.strftime("%Y")
+    context= {
+         "year": year
+    }
+    return render(request,"expertisePage.html",context)

@@ -8,4 +8,9 @@ import datetime
 # Create your views here.
 
 def theTeam(request):
-    return render(request,"theTeamPage.html",{})
+    x = datetime.datetime.now()
+    year = x.strftime("%Y")
+    context= {
+         "year": year
+    }
+    return render(request,"theTeamPage.html",context)

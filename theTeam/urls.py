@@ -6,6 +6,6 @@ from django.conf.urls.static import static
 from .views import theTeam
 
 urlpatterns = [
-    path('',theTeam, name ='attoneys'),
+    path('',theTeam, name ='the_team'),
     
 ]

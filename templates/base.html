@@ -37,7 +37,7 @@
         crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href='{% static "css/style.css"%}'>
-    <!-- <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'> -->
+    
     <link rel="stylesheet" href='{% static "css/fontawesome.min.css"%}'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -48,36 +48,36 @@
 <body>
     <div class="home">
         <div class="rowone">
-            <!-- <div class="headerCover"> -->
+            
             <ul id="nav">
                 <li><a href="{%url 'about'%}">About</a></li>
-                <!-- <li style="z-index:50000000;"><button type="button" class="btn btn-link" data-toggle="modal"
-                        data-target="#exampleModal">
-                        HQ
-                    </button></li> -->
+                
                 <li style="float: left !important;"><a href="{%url 'home'%}">
                         <img src="/static/images/mainhorizontal.png" alt="logo" style="width: 300px; height: auto;"
                             id="logo">
                     </a></li>
                 <li><a href="{%url 'contact'%}">Contact</a></li>
-                <li><a href="{%url 'attoneys'%}">Attorneys</a></li>
-                <li><a href="{%url 'field_of_expertise'%}">Practice Areas</a></li>
+                <li><a href="{%url 'the_team'%}">Attorneys</a></li>
+                <li><a href="{%url 'practicearea'%}">Practice Areas</a></li>
 
                 <li><a href="{%url 'home'%}">Home</a></li>
             </ul>
-            <!-- </div> -->
+            
 
             {% block content %}
 
             {% endblock content %}
 
-            <div class="footer" style=" text-align: center; width: 100;">
-                <h4>
+            <div class="footer pt-4 mt-2" style=" text-align: center; width: 100;">
+                <h6 class="">
                     Plot No.43 Cameroon Road, Makumbusho
-                </h4>
-                <h3>
+                </h6>
+                <h6>
                     P.O.Box 1892, Dar es Salaam, Tanzania
-                </h3>
+                </h6>
+                <div class="justify-content-center">
+                    <p>Copyright &copy; {{year}}</p>
+                </div>
             </div>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

@@ -25,7 +25,7 @@ SECRET_KEY = 'tjbvl-19d0h$e^n%&i2*u5hsoa=!_xg9gf-ru0u_s76vrz=aig'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','qcchambers.herokuapp.com','www.qcc.co.tz']
+ALLOWED_HOSTS = ['localhost', 'qcchambers.herokuapp.com','www.qcc.co.tz']
 
 
 # Application definition

@@ -25,10 +25,12 @@ def contactPage(request):
             subject = form.cleaned_data.get("subject")
             body = form.cleaned_data.get("body")
             recepient = ['info@qcc.co.tz',send_mail]
-            send_mail(subject, body, sender, recepient)
+            context['form'] = ContactForm()
+            # send_mail(subject, body, sender, recepient)
+           
             print(sender_email)
             print(body)
             print(subject)
             form.save()
-        context['form'] = ContactForm()
+        
     return render(request,"contactPage.html",context)

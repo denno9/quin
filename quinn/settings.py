@@ -75,11 +75,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'quinn.wsgi.application'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST ='kobe.tanzaniawebhosting.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT =465
+EMAIL_HOST ='mail.qcc.co.tz'
+EMAIL_USE_TLS = False
+EMAIL_PORT = 26
 EMAIL_HOST_USER = 'customers@qcc.co.tz'
-EMAIL_HOST_PASSWORD = 'ALLuminium9'
+EMAIL_HOST_PASSWORD = 'customers@2020'
 
 
 # Database

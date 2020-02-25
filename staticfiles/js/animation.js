@@ -41,11 +41,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     .add({
         targets:'#quin',
         translateY:['-100','0'],
+        easing: 'linear',
         opacity:['0','1']
     })
     .add({
         targets:'#container',
         translateY:['0','-800'],
+        easing:'linear',
+        duration:'1000',
         offset:'+=1000',
     })
     .add({

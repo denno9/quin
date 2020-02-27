@@ -211,23 +211,7 @@ ul {
     font-size: 16px !important ;
    
 }
-.container1{
-  height: 600px;
-  /* display: none; */
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 150px;
-  background-color:#1E1E1E ;
-  background-image:url("/static/images/mainlogo.png") ;
-  /* background-attachment: */
-  background-position: center;
-  background-repeat: no-repeat, repeat;
-  background-origin: content-box;
-  background-size:contain;
-  /* background-color: red; */
-}
+
 #container{
   height: 650px;
   padding: 40px;

@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded',()=>{
-    console.log("opoooop")
+document.addEventListener('DOMContentLoaded',function(){
+    console.log("opoooop");
     anime.timeline({
         easing:'easeOutExpo',
         
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         targets:'#nav',
         width:['0px','100%'],
         easing:'linear'
-        // delay:500
+        
     })
     .add({
         targets:'.maincontent1',
@@ -45,27 +45,6 @@ document.addEventListener('DOMContentLoaded',()=>{
         opacity:['0','1']
     });
 
-    // .add({
-    //     targets:'#container',
-    //     translateY:['0','-800'],
-    //     easing:'linear',
-    //     duration:'1000',
-    //     offset:'+=1000',
-    // })
-    // .add({
-    //     targets:'.container1',
-    //     width:['0%','75%'],
-    //     // display:'block'
-    // })
-    // .add({
-    //     targets:'#container',
-    //     translateY:['-800','0'],
-    //     offset:'+=1000',
-    //     delay:1000
-    // })
-    // .add({
-    //     targets:'.container1',
-    //     width:['75%','-0px']
-    // })
+   
 
 });

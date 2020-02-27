@@ -43,28 +43,29 @@ document.addEventListener('DOMContentLoaded',()=>{
         translateY:['-100','0'],
         easing: 'linear',
         opacity:['0','1']
-    })
-    .add({
-        targets:'#container',
-        translateY:['0','-800'],
-        easing:'linear',
-        duration:'1000',
-        offset:'+=1000',
-    })
-    .add({
-        targets:'.container1',
-        width:['0%','75%'],
-        // display:'block'
-    })
-    .add({
-        targets:'#container',
-        translateY:['-800','0'],
-        offset:'+=1000',
-        delay:1000
-    })
-    .add({
-        targets:'.container1',
-        width:['75%','-0px']
-    })
+    });
+
+    // .add({
+    //     targets:'#container',
+    //     translateY:['0','-800'],
+    //     easing:'linear',
+    //     duration:'1000',
+    //     offset:'+=1000',
+    // })
+    // .add({
+    //     targets:'.container1',
+    //     width:['0%','75%'],
+    //     // display:'block'
+    // })
+    // .add({
+    //     targets:'#container',
+    //     translateY:['-800','0'],
+    //     offset:'+=1000',
+    //     delay:1000
+    // })
+    // .add({
+    //     targets:'.container1',
+    //     width:['75%','-0px']
+    // })
 
 });

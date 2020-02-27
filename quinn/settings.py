@@ -74,10 +74,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'quinn.wsgi.application'
 # security
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-# SECURE_REFERRER_POLICY 
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST ='mail.qcc.co.tz'
 EMAIL_USE_TLS = False

@@ -26,11 +26,11 @@ def contactPage(request):
             sms = "jina: " + fullname + "\n"  + "email: "+ sender_email + "\n" +"request: "+ form.cleaned_data.get("body") + "\n"
             recepient = ['info@qcc.co.tz',send_mail]
             context['form'] = ContactForm()
+           
+            send_mail(subject,sms,sender, recepient,fail_silently=True)
             print(sender_email)
             print(subject)
             print(sms)
-            send_mail(subject,sms,sender, recepient,fail_silently=True)
-           
             
             form.save()
         

@@ -20,7 +20,7 @@ class ContactForm(forms.ModelForm):
         widgets = {
             'fullname':TextInput(),
             'email' : EmailInput(),
-            'subject' :TextInput(),
+            'subject':TextInput(),
             'body'  : Textarea(),
         }
         labels = {

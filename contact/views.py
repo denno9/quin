@@ -23,14 +23,15 @@ def contactPage(request):
             sender_email  = form.cleaned_data.get("email")
             sender = settings.EMAIL_HOST_USER
             subject = form.cleaned_data.get("subject")
-            body = form.cleaned_data.get("body")
+            sms = "jina: " + fullname + "\n"  + "email: "+ sender_email + "\n" +"request: "+ form.cleaned_data.get("body") + "\n"
             recepient = ['info@qcc.co.tz',send_mail]
             context['form'] = ContactForm()
-            send_mail(subject, body, sender, recepient)
-           
             print(sender_email)
-            print(body)
             print(subject)
+            print(sms)
+            send_mail(subject,sms,sender, recepient,fail_silently=True)
+           
+            
             form.save()
         
     return render(request,"contactPage.html",context)

@@ -33,5 +33,6 @@ def contactPage(request):
             print(sms)
             
             form.save()
+            return redirect('/')
         
     return render(request,"contactPage.html",context)

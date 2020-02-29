@@ -46,6 +46,20 @@
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+  text-align: center;
+}
+.button1 {
+  background-color:#1f415f;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+  width: 100% !important;
+  position: relative;
 }
 body{
     position: relative;

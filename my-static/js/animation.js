@@ -43,7 +43,10 @@ document.addEventListener('DOMContentLoaded',function(){
         translateY:['-100','0'],
         easing: 'linear',
         opacity:['0','1']
-    });
+    }).add([{
+        targets:'#container',
+        translateY:['0','0']
+    }]);
 
    
 

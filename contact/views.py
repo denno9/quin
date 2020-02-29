@@ -26,7 +26,7 @@ def contactPage(request):
             body = form.cleaned_data.get("body")
             recepient = ['info@qcc.co.tz',send_mail]
             context['form'] = ContactForm()
-            # send_mail(subject, body, sender, recepient)
+            send_mail(subject, body, sender, recepient)
            
             print(sender_email)
             print(body)

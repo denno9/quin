@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: garamond;
 }
 #map {
   height: 400px;  /* The height is 400 pixels */
@@ -301,11 +302,10 @@ ul {
   .maincontent h5{
     color:#BA9537;
     width: 100%;
-    animation-name: example;
+    /* animation-name: example; */
     animation-duration: 10s;
-    /* animation-delay: 1s; */
-    animation-timing-function: ease-out;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px !important ;
+    
 }
   .maincontent p, .maincontent2 p{
     text-align: start;

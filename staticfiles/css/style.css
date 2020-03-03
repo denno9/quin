@@ -13,7 +13,7 @@
    height: 500px;
    width: 95%;
   
-   font:13px/1.231 sans-serif;
+   /* font:13px/1.231 sans-serif; */
    margin-right: auto;
    margin-left: auto;
  }
@@ -299,9 +299,7 @@ ul {
     
     animation-timing-function: ease-out;
   }
-  p{
-    font-size: 20px;
-  }
+ 
   .maincontent h5{
     color:#BA9537;
     width: 100%;
@@ -426,9 +424,9 @@ div.gallery {
   border: 1px solid #ccc;
 }
 
-div.gallery:hover {
+/* div.gallery:hover {
   border: 1px solid #777;
-}
+} */
 
 div.gallery img {
   width: 100%;

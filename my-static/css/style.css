@@ -209,7 +209,8 @@ ul {
       margin-left: auto;
       margin-top: 20px;
       font-size: 16px !important ;
-      color: white;
+      color:#BA9537;
+      /* color: white; */
      
   }
 
@@ -222,7 +223,7 @@ ul {
     margin-left: auto !important;
     padding-top: 30px;
     margin-bottom: 10px;
-    background-color:#1E1E1E ;
+    background-color:#1E1E1E;
     font-size: 16px !important ;
    
 }
@@ -280,7 +281,7 @@ ul {
   }
   .maincontent h1, .maincontent2 h1{
       text-align: center;
-      color:#BA9537;
+      color:white;
       width: 100%;
       box-shadow: 2px 0 2px #ba8238;
       background-color: #1d2c39;
@@ -301,7 +302,7 @@ ul {
   }
  
   .maincontent h5{
-    color:#BA9537;
+    color:white;
     width: 100%;
     /* animation-name: example; */
     animation-duration: 10s;
@@ -311,6 +312,7 @@ ul {
   .maincontent p, .maincontent2 p{
     text-align: start;
     font-size: 16px !important ;
+    color: #ba8238;
    
     
 }

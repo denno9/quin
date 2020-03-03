@@ -299,6 +299,9 @@ ul {
     
     animation-timing-function: ease-out;
   }
+  p{
+    font-size: 20px;
+  }
   .maincontent h5{
     color:#BA9537;
     width: 100%;

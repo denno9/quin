@@ -1,6 +1,10 @@
 from django.db import models
 
 # Create your models here.
+
+class TeamImages(models.Model):
+    image = models.ImageField()
+
 class TheTeam(models.Model):
 
     firstname = models.CharField(max_length=120)
@@ -9,7 +13,7 @@ class TheTeam(models.Model):
     email = models.CharField(max_length=120)
     phone =models.CharField(max_length=120)
     description = models.CharField(max_length=5000)
-    image = models.ImageField()
+    # picha = models.ForeignKey()
 
 
 

@@ -26,6 +26,6 @@ class ContactForm(forms.ModelForm):
         labels = {
         "fullname": "Name*",
         "email":"email*",
-        "Subject":"subject*",
+        "subject":"subject*",
         "body":"body*"
         }

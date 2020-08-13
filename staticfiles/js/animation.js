@@ -4,16 +4,14 @@ document.addEventListener('DOMContentLoaded',function(){
         easing:'easeOutExpo',
         
 }
-    )
-    .add({
-        targets:'#nav',
-        width:['0px','100%'],
-        easing:'linear'
-        
+    ).add({
+       targets:'#logo' ,
+       translateY:['-100','0']
     })
     .add({
         targets:'.maincontent1',
-        width:['0px','100%']
+        width:['0px','100%'],
+        opacity:['0','1']
     })
     .add({
         targets:'#welcome',
@@ -51,3 +49,11 @@ document.addEventListener('DOMContentLoaded',function(){
    
 
 });
+
+
+// .add({
+//     targets:'#nav',
+//     width:['0px','100%'],
+//     easing:'linear'
+    
+// })

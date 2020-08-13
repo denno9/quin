@@ -22,10 +22,11 @@ from .views import HomePage,expertisePage,aboutPage
 
 urlpatterns = [
     path('',HomePage, name ='home'),
-     path('about/',aboutPage, name ='about'),
+    path('about/',aboutPage, name ='about'),
     path('the_team/',include('theTeam.urls')),
     path('practicearea/',expertisePage, name ='practicearea'),
-    path('contact/',include('contact.urls')),    
+    path('contact/',include('contact.urls')),  
+    path('blog/',include('blog.urls')),   
     path('admin/', admin.site.urls),
 ]
 

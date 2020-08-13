@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static  %}
+
+<meta charset="UTF-8">
+{% block content %}
+<div class="maincontent" style="width: 50%; min-height: 1000px; font-size: 20px !important;">
+      
+      
+      {% for post in posts %}
+      <div class="card mx-auto mb-3" style="background-color: #1D2C39; " >
+            <div class="card-body">
+                  <h5 class="card-title text-white text-center" style="font-size: 30px !important;">{{post.title}}</h5>
+                  <!-- <h5 class="card-title">Article</h5> -->
+                  <h6 class="card-subtitle mb-2 text-muted" style="font-size:16px !important;">{{post.date_added}}</h6>
+                  <!-- {{post.body | safe}} -->
+                  <p class="card-text" style="font-size: 16px !important;">{{post.body | truncatechars_html:250 |safe}}</p>
+                  <a href="{{post.get_absolute_url}}"class="btn btn-primary">Read More</a>
+            </div>
+      </div>
+         
+      {% endfor %}
+      <!-- <nav aria-label="Page navigation example" class="mx-auto"> -->
+            <ul class="pagination justify-content-center">
+                  {% if posts.has_previous %}
+                  
+                      
+                  <li class="page-item "><a href="?page={{posts.previous_page_number}}" class="page-link" href="#">Previous</a></li>
+                    
+                  {% endif %}   
+                  
+                  <li class="page-item mx-2">  <h4>page {{posts.number}} of {{posts.paginator.num_pages}}</h4></li> 
+                  
+                
+                {% if posts.has_next %}
+               
+                <li class="page-item "><a class="page-link" href="?page={{posts.next_page_number}}">Next</a></li>
+            
+                    
+              
+                {% endif %}
+              
+             
+              <!-- <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+              <li class="page-item"></li>
+              <!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+              
+            </ul>
+          <!-- </nav> -->
+            
+ </div>
+{% endblock content %}
+    

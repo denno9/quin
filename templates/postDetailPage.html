@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<meta charset="UTF-8">
+{% block content %}
+<div class="maincontent" style="width: 70%; min-height: 1000px; ">
+
+    <div class="card bg-dark">
+        <div class="card-body bg-dark">
+            <!-- background-color: #1D2C39; -->
+            <div style="width: 100%; height: 200px; padding-top: 30px; background-color:#1D2C39;">
+                <h6 style="margin-top: 0; text-align: center; font-size: 30px; color:white">{{object.title}}</h6>
+                <p style="margin-top: 0; text-align: center; color: white; ">--Recent articles--</p>
+                <div class="d-flex flex-row bd-highlight justify-content-center mb-3 " style="width: 100% !important;">
+
+                    {% for obj in  recents %}
+                    <div class="p-2 bd-highlight w-25" style="background-color:#1D2C39"><a href="{{obj.get_absolute_url}}"
+                            class="btn btn-link ">{{obj.title}}</a></div>
+                    {% endfor %}
+                </div>
+                
+            </div>
+            <div class="card-text p-5 mt-5" style="font-size: 20px !important; position: relative !important;">
+                {{object.body | safe}}
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

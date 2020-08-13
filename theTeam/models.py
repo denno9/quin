@@ -7,13 +7,13 @@ class TeamImages(models.Model):
 
 class TheTeam(models.Model):
 
-    firstname = models.CharField(max_length=120)
+    fullname = models.CharField(max_length=520,blank=True)
     middlename = models.CharField(max_length=120)
     lastname = models.CharField(max_length=120)
     email = models.CharField(max_length=120)
-    phone =models.CharField(max_length=120)
+    phone = models.CharField(max_length=120)
     description = models.CharField(max_length=5000)
-    # picha = models.ForeignKey()
+    # picha = models.ForeignKey(TeamImages,on_delete=models.CASCADE, blank=True)
 
 
 

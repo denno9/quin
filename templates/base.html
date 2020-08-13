@@ -37,9 +37,12 @@
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
     <link rel="stylesheet" href='{% static "css/style.css"%}'>
 
     <link rel="stylesheet" href='{% static "css/fontawesome.min.css"%}'>
+    <!-- <link rel="stylesheet" href='{% static "css/bootstrap.min.css"%}'> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Quinn Corporate Chambers</title>
@@ -48,21 +51,25 @@
 <meta name="google-site-verification" content="5QikjW58G1V_6jseV_-ESRpbShLKMy4ZMpCiEG_N77U" />
 
 <body>
-    <div class="home">
+    <div class="home" style="min-height: 1300px;">
         <div class="rowone">
 
             <ul id="nav">
-                <li><a href="{%url 'about'%}">About</a></li>
+                <li><a href="{%url 'contact'%}">Contact</a></li>
+               
 
                 <li style="float: left !important;"><a href="{%url 'home'%}">
                         <img src="/static/images/mainhorizontal.png" alt="logo" style="width: 300px; height: auto;"
                             id="logo">
                     </a></li>
-                <li><a href="{%url 'contact'%}">Contact</a></li>
+               
                 <li><a href="{%url 'the_team'%}">Our Team</a></li>
+               
+                <li><a href="{%url 'blog'%}">Blog</a></li>
                 <li><a href="{%url 'practicearea'%}">Practice Areas</a></li>
-
+                <li><a href="{%url 'about'%}">About</a></li>
                 <li><a href="{%url 'home'%}">Home</a></li>
+               
             </ul>
 
 

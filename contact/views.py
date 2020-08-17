@@ -1,11 +1,15 @@
 
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login 
+from django.contrib.auth import authenticate, login,get_user_model
 from django.contrib.auth.models import User
+from django.utils.http import is_safe_url
 from .forms import ContactForm
-from django.core.mail import EmailMessage,send_mail
-from django.conf import settings
+from django.urls import reverse
+
 import datetime
+
+
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 def contactPage(request):
@@ -36,3 +40,32 @@ def contactPage(request):
             return redirect('/')
         
     return render(request,"contactPage.html",context)
+
+def login_Page(request):
+    next_url = request.GET.get('next') 
+    next_url1 = request.POST.get('next') 
+    redirect_url = next_url or next_url1 or None
+    
+    if request.method== "POST":
+        username = request.POST.get("email")
+        password = request.POST.get("password")
+        print(username)
+        print(password)
+        user = authenticate(request, username=username, password=password)
+        # print(user)
+        if user is not None:
+           
+            login(request,user)
+        
+            if request.user.is_admin or request.user.is_superuser:
+                return redirect('admin:index')
+           
+        else:
+            if is_safe_url(redirect_url, request.get_host()):
+                print(request.get_host())
+
+                return redirect(redirect_url)
+            else:
+                return redirect("/")
+            print("invalid ........")      
+    return  redirect("/") 

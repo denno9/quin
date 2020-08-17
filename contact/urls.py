@@ -6,6 +6,7 @@ from django.conf.urls.static import static
 from .views import contactPage
 
 urlpatterns = [
-    path('',contactPage, name ='contact'),    
+    path('',contactPage, name ='contact'),  
+      
 
 ]

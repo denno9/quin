@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded',function(){
     .add({
         targets:'#neno',
         translateX:['-100','0'],
-        offset:'+=3000',
+        // offset:'+=3000',
         opacity:['0','1']
     })
     .add({

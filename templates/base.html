@@ -78,20 +78,32 @@
             {% endblock content %}
 
             <div class="footernote  mt-3 pt-2" style=" text-align: center; width: 100;">
-                <!-- <h6 class="">
-                    Plot No. 672/2, Mwai Kibaki Road,
-                </h6>
-                <h6>
-                    P.O. Box 1897, Dar es Salaam, Tanzania
-                </h6> -->
+                
                 <h6>Tel: +255 785 300 954 | +255 652 666 888 </h6>
                 <h6>Email: <a href="mailto: info@qcc.co.tz"> info@qcc.co.tz</a> </h6>
                 <h6><a href="https://www.instagram.com/quinn.corporate.chambers/" target="_blank"
                         rel="noopener noreferrer"><span class="fa fa-instagram fa-1x p-1"></span></a> | <a
                         href="https://www.linkedin.com/in/quinn-corporate-chambers-3b15201a2/" target="_blank"
-                        rel="noopener noreferrer"><span class="fa fa-linkedin fa-1x p-1"></span></a> | <a href="https://twitter.com/QuinnCorporate" target="_blank" rel="noopener noreferrer"><span class="fa fa-twitter fa-1x p-1"></span></h6>
+                        rel="noopener noreferrer"><span class="fa fa-linkedin fa-1x p-1"></span></a> | <a href="https://twitter.com/QuinnCorporate" target="_blank" rel="noopener noreferrer"><span class="fa fa-twitter fa-1x p-1"></span></a></h6>
                 <div class="justify-content-center">
                     <p>Copyright &copy; {{year}}</p>
+                </div>
+                <div style="position: absolute;right: 0;top:0;">
+                    {% if request.user.is_authenticated %}
+                    <h3 class="footer_title">
+                       <a href="{% url 'logout' %}">Logout</a>
+                    </h3>
+                    {% else %}
+                    <h3>
+                        Staff Login
+                    </h3>
+                    <form method="POST" action="{%url 'login' %}" > {% csrf_token %}
+                        <input type="hidden" name="next" value="{{request.build_absolute_uri}}">
+                        <input type="email" placeholder="Enter your email" name="email" style="border: none;border-bottom: 2px solid red;">
+                        <input type="password" placeholder="Enter your password" name="password" style="border: none;border-bottom: 2px solid red;">
+                        <button type="submit">login</button>
+                    </form>
+                    {% endif %}
                 </div>
             </div>
         </div>

@@ -1,0 +1,42 @@
+{% extends 'admin/base.html' %}
+
+
+{% load i18n %}
+
+{% block title %} 
+{{title}} | {% trans 'Django site admin' %}
+    
+{% endblock title %}
+    
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}"> QUINN COOPERATE CHAMBERS</a></h1>
+  
+{% endblock branding %}
+
+{% block extrastyle %}
+<style>
+    .module h2, .module caption, inline-group h2,#header{
+        color:white;
+        background-color: #1D2C39
+
+
+    }
+    #site-name a{
+        color: #d49f51;
+    }
+</style>
+    
+{% endblock extrastyle %}
+    
+{% block content %}
+    <h1> {% trans 'Quinn site' %}</h1>
+{% endblock content %}
+    
+
+
+{% block nav-global %}
+    
+{% endblock nav-global %}
+    
+    

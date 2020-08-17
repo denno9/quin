@@ -7,7 +7,7 @@ from django.core.paginator import Paginator,PageNotAnInteger, EmptyPage
 
 
 def blogPage(request):
-    posts = BlogPost.objects.all().order_by('-date_added')
+    posts = BlogPost.objects.all().filter(published=True).order_by('-date_added')
     x = datetime.datetime.now()
     year = x.strftime("%Y")
     context = {

@@ -13,9 +13,9 @@ class BlogPost(models.Model):
     subtitle = models.CharField(max_length=120)
     body = RichTextField(blank=True,null=True ,max_length=5000)
     slug = models.SlugField(blank=True,unique=True)
-    # body = models.TextField(max_length=5000, null=True)
     date = models.DateTimeField(auto_now_add=True)
     date_added = models.DateTimeField()
+    published = models.BooleanField(default=False)
 
 
     def  get_absolute_url(self):

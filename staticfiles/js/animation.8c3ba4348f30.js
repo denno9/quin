@@ -1,9 +1,0 @@
-document.addEventListener('DOMcontentLoaded',()=>{
-    anime.timeline({
-        easing:'easeOutExpo'}
-    )
-    .add({
-        targets:'.home',
-        width:['0px','100%']
-    })
-});
